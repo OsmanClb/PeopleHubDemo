@@ -78,12 +78,6 @@ public class HomeFragment extends Fragment implements SearchView.OnQueryTextList
         viewModel = new ViewModelProvider(this).get(HomeViewModel.class);
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        viewModel.personsLoad();
-    }
-
     public void fabClick(View view){
         Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_personRegisterFragment);
     }

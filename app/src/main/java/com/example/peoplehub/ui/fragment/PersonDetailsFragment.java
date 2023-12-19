@@ -42,7 +42,7 @@ public class PersonDetailsFragment extends Fragment {
         viewModel = new ViewModelProvider(this).get(PersonDetailsViewModel.class);
     }
 
-    public void btnUpdate(int personId, String personName, String personTel){
+    public void btnUpdate(String personId, String personName, String personTel){
         viewModel.update(personId,personName,personTel);
     }
 }

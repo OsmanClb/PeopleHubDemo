@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "304168239111",
+    "firebase_url": "https://peoplehub-85768-default-rtdb.firebaseio.com",
+    "project_id": "peoplehub-85768",
+    "storage_bucket": "peoplehub-85768.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304168239111:android:a3ccb8bf206d293358eaa2",
+        "android_client_info": {
+          "package_name": "com.example.peoplehub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz_j_DuMUFWKtqN_IN3uyt-5OzWA-kdIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

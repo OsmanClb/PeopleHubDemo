@@ -30,7 +30,7 @@ public class HomeViewModel extends ViewModel {
     public void search(String query) {
         prepo.personSearch(query);
     }
-    public void delete(int personId){
+    public void delete(String personId){
         prepo.personDelete(personId);
     }
     public void personsLoad(){

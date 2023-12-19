@@ -19,7 +19,7 @@ public class PersonDetailsViewModel extends ViewModel {
         this.prepo = prepo;
     }
 
-    public void update(int personId, String personName, String personTel){
+    public void update(String personId, String personName, String personTel){
         prepo.personUpdate(personId,personName,personTel);
     }
 }

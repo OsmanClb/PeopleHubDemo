@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("androidx.navigation.safeargs")
     id("dagger.hilt.android.plugin")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -53,4 +54,6 @@ dependencies {
 
     implementation("com.google.dagger:hilt-android:2.42")
     annotationProcessor("com.google.dagger:hilt-android-compiler:2.42")
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+    implementation("com.google.firebase:firebase-database:20.3.0")
 }

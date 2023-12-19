@@ -2,6 +2,8 @@ package com.example.peoplehub.di;
 
 
 import com.example.peoplehub.data.repo.PersonsDaoRepository;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import javax.inject.Singleton;
 
@@ -15,7 +17,14 @@ import dagger.hilt.components.SingletonComponent;
 public class AppModule {
     @Provides
     @Singleton
-    public PersonsDaoRepository providePersonsDaoRepository(){
-        return new PersonsDaoRepository();
+    public PersonsDaoRepository providePersonsDaoRepository(DatabaseReference refPersons){
+
+        return new PersonsDaoRepository(refPersons);
+    }
+    @Provides
+    @Singleton
+    public DatabaseReference provideDatabaseReference(){
+        FirebaseDatabase db = FirebaseDatabase.getInstance();
+        return db.getReference("person");
     }
 }
